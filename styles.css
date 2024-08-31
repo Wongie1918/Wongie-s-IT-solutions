@@ -1,0 +1,103 @@
+body {
+    background-color: #f8f9fa;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    padding: 50px;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+}
+h1 {
+    color: #ff6b6b;
+}
+p {
+    font-size: 18px;
+    color: #333;
+}
+.heart {
+    color: #ff6b6b;
+    font-size: 50px;
+    animation: heartbeat 1.5s infinite;
+}
+@keyframes heartbeat {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+}
+.flowers {
+    margin-top: 20px;
+}
+.flowers img {
+    width: 100px;
+    margin: 10px;
+}
+.button-container {
+    margin-top: 20px;
+}
+.button {
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px;
+}
+.message {
+    display: none;
+    font-size: 18px;
+    color: #333;
+    margin-top: 20px;
+}
+@media only screen and (max-width: 600px) {
+    body {
+        padding: 20px;
+    }
+
+    .container {
+        padding: 15px;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .heart {
+        font-size: 40px;
+    }
+
+    .flowers img {
+        width: 80px;
+        margin: 5px;
+    }
+
+    .button-container {
+        margin-top: 15px;
+    }
+
+    .button {
+        padding: 8px 16px;
+        font-size: 14px;
+        margin: 5px;
+    }
+
+    .message {
+        font-size: 16px;
+    }
+}
